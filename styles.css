@@ -444,19 +444,18 @@ body {
 
 .info__support__content {
   max-width: 698px;
- display: flex;
- flex-direction: column;
- gap: 15px;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.info__support__title{
+.info__support__title {
   font-family: Inter;
-font-size: 32px;
-font-weight: 600;
-line-height: 38.73px;
-letter-spacing: -0.03em;
-text-align: center;
-color: #00B6F1;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #00b6f1;
 }
 
 .info__support__text {
@@ -466,40 +465,137 @@ color: #00B6F1;
   line-height: 21.78px;
   letter-spacing: -0.03em;
   text-align: center;
-  color: #4F504F;
-
+  color: #4f504f;
 }
-.info__support__background{
+.info__support__background {
   position: relative;
 }
 /* fucking ellipse */
-.ellipse{
+.ellipse {
   position: absolute;
-  background: linear-gradient(180deg, #00A8E5 0%, rgba(0, 168, 229, 0) 100%);
+  background: linear-gradient(180deg, #00a8e5 0%, rgba(0, 168, 229, 0) 100%);
   width: 411px;
   height: 411px;
   border-radius: 50%;
+  opacity: 10%;
 }
 
-.background__ellipse1{
+.background__ellipse1 {
   right: -40px;
   top: -220px;
 }
-.background__ellipse2{
+.background__ellipse2 {
   width: 130px;
   height: 130px;
   left: 530px;
   top: 70px;
 }
-.background__ellipse3{
+.background__ellipse3 {
   width: 262px;
   height: 262px;
   left: 575px;
   top: -10px;
 }
-.background__ellipse4{
+.background__ellipse4 {
   width: 279px;
   height: 279px;
-  left: 800px;
+  left: 830px;
   top: -300px;
+}
+
+/* info__application */
+.info__application {
+  height: 220px;
+  width: 1310px;
+  margin-top: 70px;
+}
+
+.info__application-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__application-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info__application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info__application-question {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #fff;
+}
+.info__application-description {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: #fff;
+  opacity: 50%;
+}
+
+.info__application-inputs {
+  display: flex;
+  gap: 10px;
+}
+.info__application-input {
+  width: 320px;
+  height: 60px;
+  padding-left: 19px;
+  border-radius: 99px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: Inter;
+}
+.info__application-input::placeholder {
+  color: white;
+  font-family: Inter;
+}
+
+.info__btn-content {
+  width: 320px;
+  height: 60px;
+  border-radius: 99px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__application-button {
+  background: linear-gradient(213.93deg, #00b6f1 13.67%, #4551a3 94.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 18px;
+  line-height: 19.8px;
+  font-weight: 500;
+  font-family: Inter;
+}
+
+.info__application-consent {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  color: #fff;
+  opacity: 50%;
 }
