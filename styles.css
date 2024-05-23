@@ -330,6 +330,7 @@ body {
 
 /* background-slide_2 */
 .background-slide_2 {
+  position: relative;
   margin-top: 130px;
   display: flex;
   flex-direction: column;
@@ -339,7 +340,7 @@ body {
     #00b6f1 14.12%,
     #4551a3 83.52%
   );
-  height: 2039px;
+  height: 2339px;
   width: 100%;
 }
 .wrapper-down {
@@ -563,6 +564,9 @@ body {
   font-size: 18px;
   font-family: Inter;
 }
+.info__application-input:focus {
+  outline: none;
+}
 .info__application-input::placeholder {
   color: white;
   font-family: Inter;
@@ -598,4 +602,104 @@ body {
   line-height: 16.94px;
   color: #fff;
   opacity: 50%;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: Inter;
+}
+
+.footer__content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.footer__section-info {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.footer__address {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.footer__contact {
+  border-bottom: 1px solid white;
+}
+
+.footer__section-logo {
+  width: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+.footer__section-about {
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: end;
+  
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.footer__section-copyright {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  
+  opacity: 70%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.footer__latter{
+  position: absolute;
+  bottom: 10px;
+  left: 42.5%;
+  display: flex;
+  align-items: center;
+}
+
+.footer__border-down{
+  position: absolute;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  bottom: 60px;
+  
+}
+.footer__border-up{
+  position: absolute;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  bottom: 650px;
 }
