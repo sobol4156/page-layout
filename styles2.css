@@ -1,0 +1,415 @@
+/* Основные стили */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1380px;
+  padding: 0 10px;
+  width: 94%;
+}
+
+
+
+.background-slide {
+  background: radial-gradient(circle at center, #00a5f1, #4551a3);
+  height: 460px;
+  width: 100%;
+  position: absolute;
+  top: 66px;
+}
+
+.background-slide__img {
+  position: absolute;
+  right: 0;
+}
+
+/* Header */
+.header {
+  height: 66px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__container {
+  padding-top: 9px;
+}
+
+.header__blocks {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.header__logo {
+  display: flex;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__nav-item {
+  cursor: pointer;
+  color: #00151c;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 525px;
+  display: flex;
+}
+
+.banner__info {
+  max-width: 832px;
+  padding: 60px 0;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (width<565px) {
+  .banner__info {
+    gap: 20px;
+  }
+}
+
+.banner__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16.5px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+}
+
+@media (width<760px) {
+  .banner__title-link {
+    max-width: 230px;
+  }
+  .banner__info {
+    gap: 10px;
+  }
+  .banner__info {
+    padding: 30px 0;
+  }
+  .button--consultation {
+    margin-top: 20px;
+  }
+}
+
+@media (width<590px) {
+  .banner__title-link {
+    max-width: 190px;
+  }
+}
+@media (width<510px) {
+  .banner__title-link {
+    max-width: 130px;
+  }
+}
+
+.banner__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.banner__main-title {
+  font-family: "Inter", sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.banner__description {
+  max-width: 652px;
+  height: 44px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+
+.button--consultation {
+  width: 309px;
+  height: 68px;
+  padding: 24px 48px 24px 48px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+  text-align: left;
+}
+
+/* support */
+
+.info__support {
+  
+  max-width: 1310px;
+    width: 100%;
+  height: 356px;
+  background-color: #f2fbfe;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__support__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.info__support__content {
+  max-width: 698px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.info__support__title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.73px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #00b6f1;
+}
+.info__support__title-black {
+  color: #00151c;
+}
+@media (width<1380px) {
+  .info__support {
+    
+    width: 90%;
+  }
+}
+@media (width<1210px) {
+  .info__support {
+    
+    width: 97%;
+  }
+  .info__support__content {
+    padding: 0 5px;
+  }
+}
+.info__support__text {
+  font-family: Inter;
+  
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #4f504f;
+}
+.info__support__text-new {
+  color: #6c7a7f;
+}
+.info__support__background {
+  position: relative;
+}
+
+/* Instruction */
+.instruction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  @media (width<690px) {
+    .instruction {
+      justify-content: center;
+    }
+  }
+  
+  .instruction__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background-color: #f2fbfe;
+  }
+  
+  .instruction__block {
+    position: relative;
+    width: 210px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .instruction__svg {
+    background: radial-gradient(
+      93.54% 93.85% at 50% 50%,
+      #00b6f1 14.12%,
+      #4551a3 83.52%
+    );
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.91px;
+    color: #fff;
+  }
+  
+  .instruction__title-svg {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #4f504f;
+  }
+  
+  .button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 90px;
+    cursor: pointer;
+    background: linear-gradient(215.23deg, #00b6f1 -28.29%, #4551a3 50.61%);
+    color: #fff;
+  }
+  
+  .button--consultation {
+    width: 309px;
+    height: 68px;
+    padding: 24px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19.8px;
+  }
+  .button--consultation-new{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button--application {
+    position: absolute;
+    top: 90px;
+    width: 164px;
+    height: 41px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16.5px;
+  }
+  
+  .button__text {
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* fucking icon */
+  .instruction__svg--icon1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .instruction__svg--icon2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+  }
+  
+  .instruction__heart {
+    position: absolute;
+    right: 14px;
+    top: 26.5px;
+  }
+  
+  .instruction__svg--icon3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .instruction__vertical {
+    position: absolute;
+    right: 17.5px;
+  }
+  
+  .instruction__svg--icon4 {
+    position: relative;
+  }
+  
+  .instruction__arrow {
+    position: absolute;
+    top: 11.5px;
+    right: 12px;
+  }
+  
+  .instruction__title-svg {
+    width: 232px;
+  }
+  
+  /* fucking ellipse */
+.ellipse {
+    position: absolute;
+    background: linear-gradient(180deg, #00a8e5 0%, rgba(0, 168, 229, 0) 100%);
+    width: 411px;
+    height: 411px;
+    border-radius: 50%;
+    opacity: 10%;
+  }
+  
+  
+  .background__ellipse1 {
+    right: -40px;
+    top: -220px;
+  }
+  .background__ellipse2 {
+    width: 130px;
+    height: 130px;
+    left: 530px;
+    top: 70px;
+  }
+  .background__ellipse3 {
+    width: 262px;
+    height: 262px;
+    left: 575px;
+    top: -10px;
+  }
+  .background__ellipse4 {
+    width: 279px;
+    height: 279px;
+    left: 830px;
+    top: -300px;
+  }
+  @media(width<1210px){
+    .ellipse{
+      width: 0;
+      height: 0;
+    }
+  }

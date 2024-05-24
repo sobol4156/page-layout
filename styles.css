@@ -248,6 +248,10 @@ body {
   font-weight: 500;
   line-height: 19.8px;
 }
+.button--consultation-new{
+  display: flex;
+  justify-content: center;
+}
 
 .button--application {
   position: absolute;
@@ -575,7 +579,10 @@ body {
   align-items: center;
 }
 
-
+.info__support__icon{
+  display: flex;
+  justify-content: center;
+}
 
 .info__support__content {
   max-width: 698px;
@@ -591,6 +598,9 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   color: #00b6f1;
+}
+.info__support__title-black{
+  color: #00151C;
 }
 @media(width<1380px){
   .info__support{
@@ -615,6 +625,9 @@ body {
   letter-spacing: -0.03em;
   text-align: center;
   color: #4f504f;
+}
+.info__support__text-new{
+  color: #6C7A7F;
 }
 .info__support__background {
   position: relative;
@@ -926,6 +939,10 @@ body {
 }
 }
 @media(width<650px){
+  .footer{
+    margin-top: 380px;
+
+  }
   .footer__logo-name-img{
     width: 80%;
   }
