@@ -448,8 +448,9 @@ body {
     display: flex;
     justify-content: center;
   }
-  .about__block__image {
-    width: 90%;
+  .about__image {
+    width: 95%;
+    height: 95%;
   }
 }
 
