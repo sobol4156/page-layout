@@ -107,7 +107,11 @@
       <!-- about -->
       <div class="about__content">
         <div class="about__block__image">
-          <img class="about__image" src="./img/svg/banner-2/banner1.svg" alt="">
+          <img
+            class="about__image"
+            src="./img/svg/banner-2/banner1.svg"
+            alt=""
+          />
         </div>
         <div class="about__text">
           <div class="about__title">
@@ -128,30 +132,88 @@
       <div class="audit">
         <div class="audit__type">
           <div class="audit__title">Базовый аудит</div>
-          <div class='audit__btn'><div class="btn-circle"><img src="./img/svg/audit/btn-cross.svg" alt=""></div></div>
+          <div class="audit__btn">
+            <div class="btn-circle">
+              <img src="./img/svg/audit/btn-cross.svg" alt="" />
+            </div>
+          </div>
         </div>
         <div class="audit__type">
-            <div class="audit__type-more">
-                <div class="audit__title">Стандартный аудит</div>
-                <div class="audit__details">
-                  Результатом аудита является создание пакета документов, содержащего
-                  детализированные данные об ИТ-инфраструктуре, а также рекомендации
-                  по улучшению качества работы и повышению эффективности
-                  функционирования. Отчёт будет содержать описание текущего состояния
-                  ИТ-инфраструктуры, схему логической сети передачи данных, анализ
-                  конфигурации активного оборудования, анализ каналов связи на предмет
-                  достаточности, устойчивости к отказам и надёжности, выводы о
-                  соответствии ИТ-инфраструктуры решаемым задачам, рекомендации по
-                  модернизации и развитию.
-                </div>
+          <div class="audit__type-more">
+            <div class="audit__title">Стандартный аудит</div>
+            <div class="audit__details">
+              Результатом аудита является создание пакета документов,
+              содержащего детализированные данные об ИТ-инфраструктуре, а также
+              рекомендации по улучшению качества работы и повышению
+              эффективности функционирования. Отчёт будет содержать описание
+              текущего состояния ИТ-инфраструктуры, схему логической сети
+              передачи данных, анализ конфигурации активного оборудования,
+              анализ каналов связи на предмет достаточности, устойчивости к
+              отказам и надёжности, выводы о соответствии ИТ-инфраструктуры
+              решаемым задачам, рекомендации по модернизации и развитию.
             </div>
-            <div class='audit__btn'><div class="btn-circle"><img src="./img/svg/audit/btn-plus.svg" alt=""></div></div>
+          </div>
+          <div class="audit__btn">
+            <div class="btn-circle">
+              <img src="./img/svg/audit/btn-plus.svg" alt="" />
+            </div>
+          </div>
         </div>
         <div class="audit__type">
           <div class="audit__title">Расширенный аудит</div>
-          <div class='audit__btn'><div class="btn-circle"><img src="./img/svg/audit/btn-plus.svg" alt=""></div></div>
+          <div class="audit__btn">
+            <div class="btn-circle">
+              <img src="./img/svg/audit/btn-plus.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- included description -->
+      <div class="included">
+        <div class="background-slide_2"></div>
+        <div class="included__content">
+          <div class="included__text">
+            <div class="included__titles">
+              <div class="included__title">ЧТО ВКЛЮЧАЕТ АУДИТ:</div>
+              <div class="included__title-small">
+                Покажем, как есть и как может быть, включая
+              </div>
+            </div>
+            <div class="included__description">
+              <ul class="included__list">
+                <li>Аудит оборудования и ПО.</li>
+                <li>Аудит информационных систем на основе каталога услуг.</li>
+                <li>Аудит заявок из СервисДеск.</li>
+                <li>Аудит доступности и оценки рисков ИТ-сервисов.</li>
+                <li>
+                  <span>Аудит ИТ-процессов</span>
+                  <span class="included__item_i">
+                      <button class="item_i-btn" type="button" onclick="showDialog(event)">i</button>
+                      <dialog id="myDialog">
+                          <p>Информация о процессе аудита ИТ-процессов.</p>
+                          
+                      </dialog>
+                  </span>
+              </li>
+                <li>
+                  Аудит ИТ-персонала, штатной структуры. Матрицы компетенций.
+                </li>
+                <li>Базовый аудит безопасности.</li>
+                <li>Аудит потоков данных между ИС (под вопросом)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="included__img">
+            <img
+              class="included__img-people"
+              src="./img/svg/included/includedPeople.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
+    <script src="./index2.js"></script>
   </body>
 </html>
