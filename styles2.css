@@ -206,6 +206,7 @@ body {
 @media (width<1210px) {
   .info__support {
     width: 97%;
+    height: fit-content;
   }
   .info__support__content {
     padding: 0 5px;
@@ -305,6 +306,12 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 19.8px;
+  text-align: center;
+}
+@media (width<350px) {
+  .button--consultation{
+    width: 230px;
+  }
 }
 .button--consultation-new {
   display: flex;
@@ -504,6 +511,7 @@ body {
 /* audit */
 
 .audit {
+  height: fit-content;
   margin: 100px 0;
   display: flex;
   flex-direction: column;
@@ -869,6 +877,7 @@ body {
 @media (width<720px) {
   .application__block {
     padding: 50px;
+    height: fit-content;
   }
 }
 
@@ -1139,6 +1148,7 @@ body {
 
 
 .footer {
+  height: fit-content;
   margin-top: 190px;
   display: flex;
   flex-direction: column;
@@ -1149,6 +1159,21 @@ body {
 @media(width<845px){
   .footer{
     margin-top: 300px;
+  }
+}
+@media(width<460px){
+  .footer{
+    padding-top: 50px;
+  }
+}
+@media(width<430px){
+  .footer{
+    padding-top: 100px;
+  }
+}
+@media(width<380px){
+  .footer{
+    padding-top: 120px;
   }
 }
 .footer__content {
