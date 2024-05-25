@@ -124,7 +124,23 @@ body {
   flex-direction: column;
   gap: 30px;
 }
+@media (width<380px) {
+  .banner__main{
+    gap: 10px;
+  }
+  .button--consultation{
+    margin-top: 60px;
+  }
+}
 
+@media (width<370px) {
+  .banner__main{
+    gap: 5px;
+  }
+  .button--consultation{
+    margin-top: 65px;
+  }
+}
 .banner__main-title {
   font-family: "Inter", sans-serif;
   font-size: 45px;
