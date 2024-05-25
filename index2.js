@@ -1,26 +1,30 @@
-function showDialog(event) {
-    const dialog = document.getElementById('myDialog');
+function showPopup(event) {
+    const popup = document.getElementById('myPopup');
     const button = event.target;
 
-    // Устанавливаем позицию диалога рядом с кнопкой
-    const rect = button.getBoundingClientRect();
-    dialog.style.left = `${rect.right + window.scrollX}px`;
-    dialog.style.top = `${rect.top + window.scrollY}px`;
 
-    dialog.show();
+
+
+    // Показываем или скрываем popup
+    if (popup.classList.contains('visible')) {
+        popup.classList.remove('visible');
+    } else {
+        popup.classList.add('visible');
+    }
+
+    // Закрываем popup при клике за его пределами
+    document.addEventListener('click', function handleClickOutside(event) {
+        if (!popup.contains(event.target) && event.target !== button) {
+            popup.classList.remove('visible');
+            document.removeEventListener('click', handleClickOutside);
+        }
+    });
 }
 
-function closeDialog() {
-    const dialog = document.getElementById('myDialog');
-    dialog.close();
-}
-
-// Закрытие диалога при клике на пустую область
-document.addEventListener('click', function(event) {
-    const dialog = document.getElementById('myDialog');
-    const isClickInside = dialog.contains(event.target) || event.target.classList.contains('item_i-btn');
-
-    if (!isClickInside) {
-        dialog.close();
+// Закрываем popup при изменении ширины экрана
+window.addEventListener('resize', function() {
+    const popup = document.getElementById('myPopup');
+    if (popup.classList.contains('visible')) {
+        popup.classList.remove('visible');
     }
 });

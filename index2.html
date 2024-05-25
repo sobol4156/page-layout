@@ -189,13 +189,31 @@
                 <li>
                   <span>Аудит ИТ-процессов</span>
                   <span class="included__item_i">
-                      <button class="item_i-btn" type="button" onclick="showDialog(event)">i</button>
-                      <dialog id="myDialog">
-                          <p>Информация о процессе аудита ИТ-процессов.</p>
-                          
-                      </dialog>
+                    <button
+                      class="item_i-btn"
+                      type="button"
+                      onclick="showPopup(event)"
+                    >
+                      i
+                    </button>
+                    <div id="myPopup" class="popup">
+                      <ul class="included__popup-list">
+                        <li>Жизненные циклы информационных систем; (опытная, промышленная, end_of_life)</li>
+                        <li>Процесс поддержки пользователей;</li>
+                        <li>Процесс закупки;</li>
+                        <li>Процесс продажи;</li>
+                        <li>Процесс хранения;</li>
+                        <li>Процесс управления персоналом;</li>
+                        <li>Процесс управления знаниями;</li>
+                        <li>Процесс управления документациями;</li>
+                        <li>Процесс управления качеством;</li>
+                        <li>Процесс управления несоответствиями;</li>
+                        <li>Процесс управления изменениями;</li>
+                        <li>Процесс управления рисками/возможностями.</li>
+                      </ul>
+                    </div>
                   </span>
-              </li>
+                </li>
                 <li>
                   Аудит ИТ-персонала, штатной структуры. Матрицы компетенций.
                 </li>

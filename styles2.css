@@ -579,13 +579,11 @@ body {
   gap: 10px;
 }
 
-.included__text{
+.included__text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 
 .included__title {
   font-size: 24px;
@@ -610,25 +608,22 @@ body {
   font-weight: 500;
   line-height: 24.2px;
   text-align: left;
-  
 }
-.included__list{
+.included__list {
   height: 321px;
   max-width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.included__titles{
+.included__titles {
   height: 73px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.included__item_i{
-  position: relative;
-}
-.item_i-btn{
+
+.item_i-btn {
   border-radius: 50%;
   border: none;
   text-align: center;
@@ -637,33 +632,43 @@ body {
   flex-shrink: 0;
   cursor: pointer;
 }
-
-
-dialog {
+.included__item_i {
+  position: relative;
+}
+.popup {
+  display: none;
   height: 424px;
   width: 482px;
   border: none;
+  position: absolute;
+  left: 0;
+  top: -510px;
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0px 4px 32px 0px #0000001A;
-  position: fixed;
+  box-shadow: 0px 4px 32px 0px #0000001a;
+  background-color: #fff;
   font-size: 16px;
-  margin-left: -22px;
-  margin-top: 0;
   font-family: Inter;
-  color: #6C7A7F;
+  color: #6c7a7f;
 }
 
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.5);
+.popup.visible {
+  display: block;
 }
 
-@media(width<1430px){
-  .included__img{
+.included__popup-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (width<1430px) {
+  .included__img {
     display: flex;
     justify-content: center;
   }
-  .included__content{
+  .included__content {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -671,14 +676,13 @@ dialog::backdrop {
   }
 }
 
-@media(width<760px){
-
-  .included__img-people{
+@media (width<760px) {
+  .included__img-people {
     width: 95%;
     height: 95%;
   }
 
-  .included__text{
+  .included__text {
     display: flex;
     align-items: center;
     justify-content: center;
