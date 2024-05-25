@@ -852,6 +852,7 @@ body {
 }
 
 .application__main-description {
+  max-width: 579px;
   font-family: Inter;
   font-size: 17px;
   font-weight: 500;
@@ -897,6 +898,38 @@ body {
   letter-spacing: -0.03em;
   border-bottom: 1px solid #00b6f1;
   color: #00b6f1;
+}
+
+@media(width<1200px){
+  .application__content{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .application__text{
+    gap: 20px;
+  }
+}
+
+@media(width<720px){
+  .application__content{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .application__text{
+    gap: 20px;
+  }
+  .application__img{
+    display: flex;
+    justify-content: center;
+  }
+  .application__img-svg{
+    width: 95%;
+    height: 95%;
+  }
 }
 
 /* feedback application */
