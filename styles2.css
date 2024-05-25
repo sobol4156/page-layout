@@ -637,7 +637,7 @@ body {
 }
 .popup {
   display: none;
-  height: 424px;
+  max-height: 424px;
   width: 482px;
   border: none;
   position: absolute;
@@ -674,6 +674,39 @@ body {
     align-items: center;
     gap: 50px;
   }
+}
+@media (width<1000px) {
+  .popup {
+    left: -230px;
+  }
+}
+
+@media (width<640px) {
+  .popup {
+    left: -160px;
+    top: 30px;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+  .included__popup-list {
+    width: 60%;
+    height: 100%;
+    
+  }
+}
+
+@media (width<500px) {
+  .popup {
+    left: -200px;
+
+}
+}
+
+@media (width<400px) {
+  .popup {
+    left: -250px;
+
+}
 }
 
 @media (width<760px) {
