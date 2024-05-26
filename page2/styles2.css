@@ -649,9 +649,24 @@ body {
   height: 23px;
   flex-shrink: 0;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; 
+}
+
+.gradient-text {
+  background: linear-gradient(213.93deg, #00B6F1 13.67%, #4551A3 94.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .included__item_i {
   position: relative;
+  display: inline-flex;
+  
+
 }
 .popup {
   display: none;
