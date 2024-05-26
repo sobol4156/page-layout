@@ -6,6 +6,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -676,7 +677,7 @@ body {
   left: 830px;
   top: -300px;
 }
-@media (width<1210px) {
+@media (width<1540px) {
   .ellipse {
     width: 0;
     height: 0;

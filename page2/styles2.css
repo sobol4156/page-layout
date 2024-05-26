@@ -1,12 +1,13 @@
 /* Основные стили */
 body {
-  
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -1137,7 +1138,7 @@ body {
     #4551a3 83.52%
   );
   position: absolute;
-  height: 701px;
+  height: 680px;
   width: 100%;
   left: 0;
   z-index: -1;
@@ -1325,11 +1326,35 @@ body {
   }
 }
 
-
 .footer__border-down {
   position: absolute;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
   width: 100%;
-  bottom: -30px;
+  bottom: 50px;
   left: 0;
+}
+@media(width<612px){
+  .footer__border-down{
+    bottom: 80px;
+  }
+}
+@media(width<478px){
+  .footer__border-down{
+    bottom: 100px;
+  }
+}
+@media(width<466px){
+  .footer__border-down{
+    bottom: 120px;
+  }
+}
+@media(width<377px){
+  .footer__border-down{
+    bottom:140px;
+  }
+}
+@media(width<374px){
+  .footer__border-down{
+    bottom:2%;
+  }
 }
