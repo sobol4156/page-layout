@@ -2,9 +2,7 @@
 
 /* Основные стили */
 
-html{
-  overflow-x: hidden;
-}
+
 body {
   position: relative;
   margin: 0;
