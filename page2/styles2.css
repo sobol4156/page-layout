@@ -1,4 +1,10 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 /* Основные стили */
+
+html{
+  overflow-x: hidden;
+}
 body {
   position: relative;
   margin: 0;
@@ -22,6 +28,7 @@ body {
   width: 100%;
   position: absolute;
   top: 66px;
+  left: 0;
 }
 
 
