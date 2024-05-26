@@ -1,5 +1,6 @@
 /* Основные стили */
 body {
+  
   margin: 0;
   padding: 0;
   display: flex;
@@ -21,6 +22,8 @@ body {
   position: absolute;
   top: 66px;
 }
+
+
 
 .background-slide__img {
   position: absolute;
@@ -408,7 +411,7 @@ body {
   left: 830px;
   top: -300px;
 }
-@media (width<1210px) {
+@media (width<1540px) {
   .ellipse {
     width: 0;
     height: 0;
@@ -1327,13 +1330,6 @@ body {
   position: absolute;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
   width: 100%;
-  bottom: 60px;
+  bottom: -30px;
   left: 0;
-}
-.footer__border-up {
-  position: absolute;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
-  width: 100%;
-  left: 0;
-  bottom: 650px;
 }
